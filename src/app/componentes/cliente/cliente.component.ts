@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 
 import { NgbModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
@@ -25,7 +24,7 @@ export class ClienteComponent {
     };
 
     // Abre el modal utilizando el componente NuevoClienteComponent
-    this.modalService.open(ModalClienteComponent, modalOptions);
+    this.modalService.open(ModalClienteComponent, modalOptions); // al boton (click)="openModal()"
   }
 
 }
